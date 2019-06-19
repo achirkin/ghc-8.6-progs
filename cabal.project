@@ -1,0 +1,105 @@
+packages:
+  progs.cabal
+
+constraints:
+    cryptonite >= 0.26
+  , cryptonite -integer-gmp
+  , hashable >= 1.3.0.0
+  , hashable -integer-gmp
+  , cmdargs >= 0.10.20
+  , cmdargs -quotation
+
+source-repository-package
+  type: git
+  location: https://github.com/achirkin/hoogle.git
+  tag: 56d1bb07d2ff04881d018d79d93afc87c99417a4
+
+source-repository-package
+  type: git
+  location: https://github.com/achirkin/stylish-haskell.git
+  tag: 9467d78116af12ca4924739776804d70e71ba674
+
+source-repository-package
+  type: git
+  location: https://github.com/achirkin/path.git
+  tag: 55cf420c7891225db37f53d6f77e9ebb92cbe685
+
+source-repository-package
+  type: git
+  location: https://github.com/achirkin/path-io.git
+  tag: f5aab5d53653e674428d2db1da5935c86e2f511b
+
+source-repository-package
+  type: git
+  location: https://github.com/chrisdone/hindent.git
+  tag: 8802a5c8eb6ad9553662cd9211852e16f3f2c60f
+
+source-repository-package
+  type: git
+  location: https://github.com/achirkin/brittany.git
+  tag: 2a4baa2b77f56495276ef07cc0cf1763d7b6599f
+
+source-repository-package
+  type: git
+  location: https://github.com/achirkin/butcher.git
+  tag: aaa8af6497f19618492fda7fe643885b5b9d4342
+
+source-repository-package
+  type: git
+  location: https://github.com/achirkin/czipwith.git
+  tag: d9a9c13313ef7bb79757e2883d16913402ecf2f0
+
+source-repository-package
+  type: git
+  location: https://github.com/achirkin/ghc-exactprint.git
+  tag: c5f3062994be91729b03da062da80e90404aaf0d
+
+allow-newer:
+  vault:hashable
+
+remote-repo-cache: /home/achirkin/Documents/haskell/ghc-cross-8.6/progs/.cabal/packages
+logs-dir: /home/achirkin/Documents/haskell/ghc-cross-8.6/progs/.cabal/logs
+store-dir: /home/achirkin/Documents/haskell/ghc-cross-8.6/progs/.cabal/store
+shared: False
+static: True
+executable-dynamic: False
+optimization: 2
+executable-stripping: True
+extra-prog-path: /home/achirkin/Documents/haskell/ghc-cross-8.6/progs/.cabal/bin
+relocatable: True
+documentation: False
+symlink-bindir: /home/achirkin/Documents/haskell/ghc-cross-8.6/progs/.cabal/bin
+build-summary: /home/achirkin/Documents/haskell/ghc-cross-8.6/progs/.cabal/logs/build.log
+configure-options: --host=aarch64-linux-gnu
+jobs: 6
+
+program-locations
+  ar-location: /usr/bin/aarch64-linux-gnu-ar
+  gcc-location: /usr/bin/aarch64-linux-gnu-gcc
+  ghc-location: /home/achirkin/Documents/haskell/ghc-cross-8.6/ghc-8.6.5/inplace/bin/ghc-stage1
+  ghc-pkg-location: /home/achirkin/Documents/haskell/ghc-cross-8.6/ghc-8.6.5/inplace/bin/ghc-pkg
+  hsc2hs-location: /home/achirkin/Documents/haskell/ghc-cross-8.6/ghc-8.6.5/inplace/bin/hsc2hs
+  ld-location: /usr/bin/aarch64-linux-gnu-ld.gold
+  pkg-config-location: /usr/bin/aarch64-linux-gnu-pkg-config
+  strip-location: /usr/bin/aarch64-linux-gnu-strip
+
+program-options
+  -- alex-options:
+  -- ar-options:
+  -- c2hs-options:
+  -- cpphs-options:
+  -- doctest-options:
+  -- gcc-options:
+  -- ghc-options:
+  -- ghc-pkg-options:
+  -- haddock-options:
+  -- happy-options:
+  hsc2hs-options: --cross-compile
+  -- hscolour-options:
+  -- jhc-options:
+  -- ld-options:
+  -- pkg-config-options:
+  -- runghc-options:
+  -- strip-options:
+  -- tar-options:
+  -- uhc-options:

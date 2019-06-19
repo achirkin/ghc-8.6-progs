@@ -1,0 +1,30 @@
+name:                progs
+version:             1.0.0.0
+synopsis:            Install all those progs
+author:              Artem Chirkin
+copyright:           (c) 2019 Artem Chirkin
+category:            system
+build-type:          Simple
+cabal-version:       >=2.0
+
+
+executable progs-8.6.5
+    main-is:             main.hs
+    build-tool-depends:
+        alex:alex >= 3.2.4
+      , happy:happy >= 1.19.8
+      , cpphs:cpphs >= 1.20.8
+      , hlint:hlint >= 2.1.24
+      , ghcid:ghcid >= 0.7.4
+      , c2hs:c2hs >= 0.28.6
+      , hpack:hpack >= 0.31.2
+      , hscolour:HsColour >= 1.24.4
+      , hoogle:hoogle >= 5.0.17.9
+      , stylish-haskell:stylish-haskell >= 0.9.2.2
+      , hindent:hindent >= 5.3.0
+      , brittany:brittany >= 0.12.0.0
+    --  , haddock:haddock >= 2.22.0  -- included in GHC
+    --  , hsc2hs:hsc2hs >= 0.68.4 -- included in GHC
+    build-depends:
+        base >= 4.12 && <5
+      , Cabal >= 2.0 && <4
