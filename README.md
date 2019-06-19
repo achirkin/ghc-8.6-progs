@@ -15,8 +15,6 @@ sudo apt-get install zlib1g-dev:arm64
 ```
 Build it (for some reason, need to force disable-documentation:
 ```
-mkdir .cabal
-mkdir .cabal/bin
 cabal v2-update
-cabal v2-build --disable-documentation
+cabal v2-install alex happy cpphs hlint ghcid c2hs hpack hscolour hoogle stylish-haskell hindent brittany --disable-documentation
 ```
