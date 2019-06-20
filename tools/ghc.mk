@@ -7,4 +7,5 @@ install: install_utils/copy_tools
 
 .PHONY: install_utils/copy_tools
 install_utils/copy_tools:
-	$(foreach i,$(EXTRA_INSTALL_TOOLS),$(CP) "$(EXTRA_INSTALL_TOOLS_DIR)/$i" "$(DESTDIR)$(bindir)/$i")
+	$(foreach i,$(EXTRA_INSTALL_TOOLS),\
+	   $(call make-command, $(CP) "$(EXTRA_INSTALL_TOOLS_DIR)/$i" "$(DESTDIR)$(bindir)/$i"))
