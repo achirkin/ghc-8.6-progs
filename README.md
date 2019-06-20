@@ -17,4 +17,8 @@ Build it (for some reason, need to force disable-documentation:
 ```
 cabal v2-update
 cabal v2-install alex happy cpphs hlint ghcid c2hs hpack hscolour hoogle stylish-haskell hindent brittany --disable-documentation
+cp -L .cabal/bin/* tools/
 ```
+
+Last, copy the `tools` folder inside `utils` folder of ghc source tree and add it to the build folder list
+inside the root ghc.mk (i.e. `BUILD_DIRS += utils/tools`).
