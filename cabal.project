@@ -17,7 +17,7 @@ source-repository-package
 source-repository-package
   type: git
   location: https://github.com/achirkin/stylish-haskell.git
-  tag: 9467d78116af12ca4924739776804d70e71ba674
+  tag: d9bc96a5228c1de4d55c0664aeb71e5949d0a6d0
 
 source-repository-package
   type: git
@@ -52,7 +52,7 @@ source-repository-package
 source-repository-package
   type: git
   location: https://github.com/achirkin/ghc-exactprint.git
-  tag: c5f3062994be91729b03da062da80e90404aaf0d
+  tag: 9edaf914e3702da46a0c3bd47ccc1fcb0189470a
 
 allow-newer:
   vault:hashable
